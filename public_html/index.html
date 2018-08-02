@@ -9,48 +9,108 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        
+        
         <link rel="stylesheet" href="style.css">
          <script src="js/gamemanager.js"></script>
          <script src="js/player.js"></script>
          <script src="js/enemy.js"></script>
     </head>
     <body>
-  
-        <div class="header">
-            <p>Play the game RPG !!!</p>
-            <h2>Choose your character!</h2>
+  <div class="header">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid text-center">
+              <h2 class="display-3">Choose your character</h2>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
         </div>
-        <div class="interface">
-            <a href="#" onclick="gamemanager.setGameStart('Warior')">
-                <img src="img/warior.jpg" alt="warrior">
-                <div>
-                    <h3>Warrior</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+  </div>      
+        <div class="main-container">     
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-4 interface">
+                    <a href="#" onclick="gamemanager.setGameStart('Warior')"><img src="img/warior.jpg" alt="warrior"></a>
+                </div>       
+                <div class="col-md-8">
+                 <a href="#" onclick="gamemanager.setGameStart('Warior')"><h3>Warrior</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, making 
+                        it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                        College in Virginia, looked up one of the more obscure Latin words, consectetur,
+                        from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                        literature, discovered the undoubtable source.</p>
+                </a>
                 </div>
-            </a>
-             <a href="#" onclick="gamemanager.setGameStart('Rogue')">
-                <img src="img/rogue.jpg" alt="rouge">
-                <div>
-                    <h3>Rouge</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                </div>
-            </a>
-             <a href="#" onclick="gamemanager.setGameStart('Mage')">
-                <img src="img/mage.jpg" alt="mage">
-                <div>
-                    <h3>Mage</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                </div>
-            </a>
-             <a href="#" onclick="gamemanager.setGameStart('Hunter')">
-                <img src="img/hunter.jpg" alt="hunter">
-                <div>
-                    <h3>Hunter</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                </div>
-            </a>
+            </div>
         </div>
+        
+        
+        
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" onclick="gamemanager.setGameStart('Rogue')"><img src="img/rogue.jpg" alt="rouge"></a>
+                </div>
+                <div class="col-md-8">
+               <a href="#" onclick="gamemanager.setGameStart('Rogue')">     <h3>Rouge</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over
+                        2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                        College in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                        from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                        literature, discovered the undoubtable source.</p>
+                 </a>
+                </div>
+            </div>
+        </div>
+                     
+
+          
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" onclick="gamemanager.setGameStart('Mage')"><img src="img/mage.jpg" alt="mage"></a>
+                </div>
+                <div class="col-md-8">
+                <a href="#" onclick="gamemanager.setGameStart('Mage')"> <h3>Mage</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock, a Latin professor
+                        at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+                        Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+                        the cites of the word in classical literature, discovered the undoubtable source.</p>
+                 </a>
+                </div>
+            </div>
+        </div>
+                        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" onclick="gamemanager.setGameStart('Hunter')"><img src="img/hunter.jpg" alt="hunter"></a>
+                </div>
+                <div class="col-md-8">
+                <a href="#" onclick="gamemanager.setGameStart('Hunter')"><h3>Hunter</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old. Richard McClintock, a Latin professor 
+                        at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+                        Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+                        the cites of the word in classical literature, discovered the undoubtable source.</p>
+                </a>
+                </div>
+            </div>
+        </div>
+         
+       </div>
+        
         <div class="actions">
             
         </div>

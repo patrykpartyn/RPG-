@@ -21,8 +21,9 @@ let gamemanager={
                 player=new Player(classType,200,0,50,200,100);
                 break;      
         }
-        let getInterface=document.querySelector(".interface");
-        getInterface.innerHTML='<img src="img/'+classType+'.jpg" alt='+classType+'><div><h3>'+classType+'</h3>\n\
+        let getInterface=document.querySelector(".main-container");
+        getInterface.innerHTML='<img src="img/'+classType+'.jpg" alt='+classType+' class="img1">\n\
+        <div class="center"><h3>'+classType+'</h3>\n\
         <p class="health-player">Health:'+player.health+'</p>\n\
         <p>Mana:'+player.mana+'</p>\n\
         <p>Strength:'+player.strength+'</p>\n\
@@ -33,9 +34,9 @@ let gamemanager={
         let getHeader=document.querySelector(".header");
         let getActions=document.querySelector(".actions");
         let getArena=document.querySelector(".arena");
-        getHeader.innerHTML='<p>Fin an enemy!</p>';
-        getActions.innerHTML='<a href="#" class="button-prefight" onclick="gamemanager.setFight()">Search Enemy!</a>';
-        getArena.innerHTML='<p class="p1">Fight Arena</p>';
+        getHeader.innerHTML='<div class="jumbotron jumbotron-fluid"><div class="container-fluid text-center"><h2 class="display-3">Random your enemy !</h2></div></div>';
+        getActions.innerHTML='<a href="#" class="btn btn-warning" onclick="gamemanager.setFight()">Search Enemy!</a>';
+        getArena.innerHTML='<div class="arena1">Fight Arena</div>';
         
     },
     setFight:function(){
@@ -62,9 +63,10 @@ let gamemanager={
                 break;     
         }
         
-        getHeader.innerHTML='<p>Choose your attack !</p>';
-        getActions.innerHTML='<a href="#" class="button-prefight" onclick="PlayerMoves.calcAttack()">Attack</a>';
-        getEnemy.innerHTML='<img src="img/'+enemy.enemyType+'.jpg" alt='+enemy.enemyType+'><div><h3>'+enemy.enemyType+'</h3>\n\
+        getHeader.innerHTML='<div class="jumbotron jumbotron-fluid"><div class="container-fluid text-center"><h2 class="display-3">Next attack!</h2></div></div>';
+        getActions.innerHTML='<a href="#" class="btn btn-danger" onclick="PlayerMoves.calcAttack()" class="img1">Attack</a>';
+        getEnemy.innerHTML='<img src="img/'+enemy.enemyType+'.jpg" alt='+enemy.enemyType+' class="img1">\n\
+        <div class="center"><h3>'+enemy.enemyType+'</h3>\n\
         <p class="health-enemy">Health:'+enemy.health+'</p>\n\
         <p>Mana:'+enemy.mana+'</p>\n\
         <p>Strength:'+enemy.strength+'</p>\n\

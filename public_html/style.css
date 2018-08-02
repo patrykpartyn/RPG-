@@ -1,15 +1,48 @@
 img{
-    width: 160px;
+    width: 300px;
+    margin-left:100px;
 }
-.arena{
+img:hover{
+    opacity: 0.8;
+}
+.arena1{
+    
     width: 600px;
     height:100px;
     background-color: teal;
+    text-align: center;
+    padding:20px;
+    font-size:30px;
+    font-weight: 800;
+    margin-left: 500px;
 }
-.p1{
+.p{
    
     text-align: center;
-    padding-top:45px;
-   
-    
+    color:#fff;   
+}
+
+body{
+    background-color: lightgray;
+}
+ a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color:grey;
+}
+.container-fluid{
+    padding-bottom: 30px;
+}
+.actions{
+    padding-left:730px;
+}
+.img1{
+    margin-left: 680px;
+    margin-top:40px;
+}
+.center{
+    text-align: center;
 }
